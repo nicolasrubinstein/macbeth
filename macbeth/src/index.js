@@ -1,7 +1,6 @@
 import React from "react";
 
-const index = () => {
-  return <div>index</div>;
-};
+import ReactDOM from "react-dom";
+import App from "./App";
 
-export default index;
+ReactDOM.render(<App />, document.querySelector("#root"));
