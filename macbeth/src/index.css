@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(97, 46, 136, 1) 97%
+  );
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.qSet {
+  background: rgba(190, 217, 225, 0.498);
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 90vw;
+  max-width: 700px;
+}
+
+.answer {
+  cursor: pointer;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 10px 10px;
+}
+
+.answer.selected {
+  color: white;
+
+  background: rgb(25, 23, 47);
+}
+
+.answer:not(.selected):hover {
+  background: rgb(25, 23, 47, 0.5);
+}
+
+button {
+  height: 60px;
+  width: 240px;
+  margin-bottom: 30px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: rgb(97, 97, 235);
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(97, 97, 235, 0.7);
+}
+
+.results {
+  position: absolute;
+  z-index: 1;
+  background: rgb(253, 235, 235);
+  width: 90vw;
+  max-width: 700px;
+  height: 500px;
+  border-radius: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+.name {
+  font-family: "Satisfy", cursive;
+  font-size: 50px;
+  margin-top: -10px;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  width: 100vw;
+  height: 3100px;
+  background: rgba(0, 0, 0, 0.509);
+  position: absolute;
+}
+
+img {
+  height: 300px;
+  margin-top: -20px;
+}
+
+.close {
+  all: initial;
+  position: absolute;
+  background-color: transparent;
+}
+.close:hover {
+  all: initial;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.close-wrap {
+  width: 90%;
+  height: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+}
+
+.loader p {
+  margin-bottom: 150px;
+}
