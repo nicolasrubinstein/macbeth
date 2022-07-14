@@ -17,7 +17,7 @@ const QuestionSet = ({ q, ansArr, setValues, values, n }) => {
     if (!values[n.toString()]) {
       setSelectedIndex(null);
     }
-  }, [values]);
+  }, [values, n]);
 
   return (
     <div className="qSet">

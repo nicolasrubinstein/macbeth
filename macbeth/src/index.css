@@ -75,7 +75,7 @@ button:hover {
   background: rgb(253, 235, 235);
   width: 90vw;
   max-width: 700px;
-  height: 500px;
+  height: 550px;
   border-radius: 20px;
 }
 
@@ -135,4 +135,19 @@ img {
 
 .loader p {
   margin-bottom: 150px;
+}
+
+.share {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  background: rgb(216, 141, 231);
+}
+
+.share img {
+  width: 25px;
+  height: 25px;
+  margin-top: 0px;
 }

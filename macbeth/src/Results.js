@@ -11,6 +11,13 @@ const Results = ({ char, onClose }) => {
     }, 3000);
   }, []);
 
+  const share = () => {
+    navigator.share({
+      text: `Yo ya jugué al quiz de Macbeth y soy... ¡${char}! Jugá vos también: ${window.location.href}`,
+      title: "Quiz de Macbeth",
+    });
+  };
+
   return (
     <div className="wrapper">
       <div className="results">
@@ -30,6 +37,9 @@ const Results = ({ char, onClose }) => {
             <h2>Sos...</h2>
             <h2 className="name">¡{char}!</h2>
             <img src={`${char}.png`} alt={char} />
+            <button className="share" onClick={share}>
+              <img src="/send.png" alt="send" /> ¡Compartí tu resultado!
+            </button>
           </section>
         )}
       </div>
